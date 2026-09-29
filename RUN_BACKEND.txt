@@ -1,0 +1,7 @@
+Backend quick run:
+1. Open this backend folder in IntelliJ IDEA / Spring Tool Suite / VS Code.
+2. Set MySQL password in src/main/resources/application.properties.
+3. Run HostelManagementApplication.java.
+
+Or, if Maven is installed:
+mvn spring-boot:run

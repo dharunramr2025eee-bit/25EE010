@@ -1,0 +1,15 @@
+{
+  "info": {
+    "name": "Hostel Management API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {"name":"Get Rooms","request":{"method":"GET","url":"http://localhost:8080/api/rooms"}},
+    {"name":"Add Room","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"roomNumber\":\"A101\",\"type\":\"DOUBLE\",\"capacity\":2}"},"url":"http://localhost:8080/api/rooms"}},
+    {"name":"Get Students","request":{"method":"GET","url":"http://localhost:8080/api/students"}},
+    {"name":"Add Student","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"name\":\"Arun\",\"email\":\"arun@example.com\",\"phone\":\"9876543210\",\"department\":\"EEE\",\"year\":2,\"roomId\":1}"},"url":"http://localhost:8080/api/students"}},
+    {"name":"Get Complaints","request":{"method":"GET","url":"http://localhost:8080/api/complaints"}},
+    {"name":"Add Complaint","request":{"method":"POST","header":[{"key":"Content-Type","value":"application/json"}],"body":{"mode":"raw","raw":"{\"studentId\":1,\"title\":\"Fan not working\",\"description\":\"Room fan is not working\"}"},"url":"http://localhost:8080/api/complaints"}},
+    {"name":"Resolve Complaint","request":{"method":"PUT","url":"http://localhost:8080/api/complaints/1/resolve"}}
+  ]
+}
